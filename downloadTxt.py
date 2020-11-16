@@ -45,6 +45,7 @@ def fetchMetadata(html):
     metadata['title'] = title
     metadata['rest_page_urls'] = rest_page_urls
     metadata['new_file'] = new_file
+
     return metadata
 
 def main(url):
