@@ -25,6 +25,7 @@ def getAllPageLinks(soup):
     last_page_number = int(last_page[4:]) if last_page.startswith('...') else int(last_page)
     for page_number in range(2,last_page_number+1):
         rest_page_urls.append('%s%s%s'%(next_url[:index_of_last_dash-1],page_number,next_url[index_of_last_dash:]))
+
     return rest_page_urls
 
 def getTitle(soup):
